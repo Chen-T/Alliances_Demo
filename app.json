@@ -1,0 +1,39 @@
+{
+  "pages":[ 
+    "pages/first/first",
+    "pages/order/order",
+    "pages/personal/personal",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "首都租客联盟社区",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "list":[
+      {
+        "pagePath":"pages/first/first",
+        "text":"首页",
+        "iconPath":"pages/images/bottom_icon/index.png",
+        "selectedIconPath":"pages/images/bottom_icon/index_select.png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "订单",
+        "iconPath": "pages/images/bottom_icon/order.png",
+        "selectedIconPath": "pages/images/bottom_icon/order_select.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "我的",
+        "iconPath": "pages/images/bottom_icon/mine.png",
+        "selectedIconPath": "pages/images/bottom_icon/mine_select.png"
+      }
+    ],
+    "backgroundColor": "#FAF0E6",
+    "borderStyle":"black"
+  }
+}
