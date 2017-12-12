@@ -1,10 +1,8 @@
 {
   "pages":[ 
-    "pages/first/first",
-    "pages/order/order",
-    "pages/personal/personal",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/order/order",
+    "pages/mine/mine",
   ],
   "window":{
     "backgroundTextStyle":"light",
