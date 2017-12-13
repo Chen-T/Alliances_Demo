@@ -1,4 +1,4 @@
-<!--pages/index/index.wxml-->
+<!--pages/first/first.wxml-->
 <swiper indicator-dots="{{indicatorDots}}" duration="{{duration}}" autoplay="{{autoplay}}" interval="{{interval}}" indicator-active-color='{{indicatorActive}}'>
   <block wx:for="{{imgUrls}}">
     <swiper-item bindtap="itemclick" data-id="{{item.id}}" data-name="{{data.name}}">
@@ -20,4 +20,43 @@
     <text class="index_icon_word">资讯</text>
   </view>
 </view>
+<!--定义模板-->
 <view class="home-view-line02"></view>
+<template name="module_title">
+  <text class="module_title">{{moduleTitle}}</text>
+  <text class="viewmore">查看全部></text>
+</template>
+<!--小社群模板-->
+<template name="small_group">
+  <view class="group_view">
+    <image src='{{group_image}}' class="group_image" />
+    <view class='group_children'>
+      <text class='group_type' id='group_type'>{{groupType}}贴({{description01}}/{{description02}}）</text>
+      <button type='primary' size='mini'>加入</button>
+    </view>
+    <text class='group_total'>{{value01}}人加入|{{value02}}条动态</text>
+  </view>
+</template>
+<!--频道模板-->
+<template name="channel">
+  <view class='channel_view'>
+      <image src='{{channel_image}}' class='channel_image'/>
+      <view>
+        <text class="channel_title">{{channel_title}}</text>
+        <text class="channel_description">{{channel_description}}</text>
+        <text class="channel_total">已更新{{channel_total}}期</text>
+      </view>
+  </view>
+</template>
+<!--小社群使用模板-->
+<template is="module_title" data="{{...module01}}" />
+<template is="small_group" data="{{...soliciting}}" />
+<view class="home-view-line03"></view>
+<template is="small_group" data="{{...ridicule}}" />
+<view class="home-view-line03"></view>
+<template is="small_group" data="{{...rent}}" />
+<view class="home-view-line04"></view>
+
+<!--频道使用模板-->
+<template is="module_title" data="{{...module02}}" />
+<template is="channel" data="{{...rental_information}}" />
