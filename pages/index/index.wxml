@@ -1,4 +1,4 @@
-<!--pages/first/index.wxml-->
+<!--pages/index/index.wxml-->
 <swiper indicator-dots="{{indicatorDots}}" duration="{{duration}}" autoplay="{{autoplay}}" interval="{{interval}}" indicator-active-color='{{indicatorActive}}'>
   <block wx:for="{{imgUrls}}">
     <swiper-item bindtap="itemclick" data-id="{{item.id}}" data-name="{{data.name}}">
