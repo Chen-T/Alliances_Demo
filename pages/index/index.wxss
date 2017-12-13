@@ -1,21 +1,35 @@
-/**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* pages/index/index.wxss */
+.swiper{
+  height:100%,
+  padding-right=100px;
 }
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.slide-image{
+  height:100%;
+  width: 100%;
 }
-
-.userinfo-nickname {
-  color: #aaa;
+.index_top{
+  width: 50rpx;
+  height: 50rpx;
+  padding: 68rpx;
+  padding-top: 20px;
+  padding-bottom: 2px;
 }
-
-.usermotto {
-  margin-top: 200px;
+.index_icon_word{
+  font-size: 30rpx;
+  color: #BEBEBE;
+  padding: 63rpx;
+  padding-top:2px;
+}
+/*分界线样式*/
+.home-view-line01{
+ width: 100%;
+ height: 3px;
+ margin-top: 5px;
+ background-color: gainsboro;
+}
+.home-view-line02{
+ width: 100%;
+ height: 2px;
+ margin-top: 5px;
+ background-color: gainsboro;
 }
