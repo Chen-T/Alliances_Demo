@@ -5,7 +5,56 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    personal_information:{
+      item_images:"../images/mine_icon/icon_Profile_Edit.png",
+      mine_description:"个人信息",
+      mine_go:'../images/mine_icon/go.png'
+    },
+    my_income:{
+      item_images: "../images/mine_icon/icon_profile.png",
+      mine_description: "我的收益",
+      mine_go: '../images/mine_icon/go.png'
+    },
+    promotion_center:{
+      item_images: "../images/mine_icon/icon_Promotion.png",
+      mine_description: "推广中心",
+      mine_go: '../images/mine_icon/go.png'
+    },
+    my_activities:{
+      item_images: "../images/mine_icon/icon_Profile_activity.png",
+      mine_description: "我的活动",
+      mine_go: '../images/mine_icon/go.png'
+    },
+    my_quesAnser:{
+      item_images: "../images/mine_icon/icon_questions.png",
+      mine_description: "我的问答",
+      mine_go: '../images/mine_icon/go.png'
+    },
+    my_bought: {
+      item_images: "../images/mine_icon/icon_goumaijil.png",
+      mine_description: "我的已购",
+      mine_go: '../images/mine_icon/go.png'
+    },
+    giving_records: {
+      item_images: "../images/mine_icon/icon_goumaijil.png",
+      mine_description: "赠送记录",
+      mine_go: '../images/mine_icon/go.png'
+    },
+    coupons: {
+      item_images: "../images/mine_icon/icon_coupons.png",
+      mine_description: "优惠券",
+      mine_go: '../images/mine_icon/go.png'
+    },
+    invitation_code:{
+      item_images: "../images/mine_icon/icon_Profile_invite.png",
+      mine_description: "邀请码",
+      mine_go: '../images/mine_icon/go.png'
+    },
+    feedback: {
+      item_images: "../images/mine_icon/icon_yijianfankui.png",
+      mine_description: "意见反馈",
+      mine_go: '../images/mine_icon/go.png'
+    },
   },
 
   /**
