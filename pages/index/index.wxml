@@ -1,6 +1,6 @@
-<!--pages/first/first.wxml-->
+<!--pages/home/home.wxml-->
 <swiper indicator-dots="{{indicatorDots}}" duration="{{duration}}" autoplay="{{autoplay}}" interval="{{interval}}" indicator-active-color='{{indicatorActive}}'>
-  <block wx:for="{{imgUrls}}">
+  <block wx:for="{{imgUrls}}" wx:key="index_img">
     <swiper-item bindtap="itemclick" data-id="{{item.id}}" data-name="{{data.name}}">
       <image src="{{item}}" class="slide-image" />
     </swiper-item>
@@ -11,7 +11,7 @@
 <!--导航栏四个小图标-->
 <view class="index_icon" id="index_icon">
   <view class="navigation_top">
-    <block wx:for="{{navigation_img}}">
+    <block wx:for="{{navigation_img}}" wx:key="index_inavigation">
       <image src="{{item}}" class="index_top" />
     </block>
     <text class="index_icon_word">求租</text>
@@ -23,29 +23,49 @@
 <!--定义模板-->
 <view class="home-view-line02"></view>
 <template name="module_title">
-  <text class="module_title">{{moduleTitle}}</text>
-  <text class="viewmore">查看全部></text>
+  <view class='moudule_top'>
+    <text class="module_title">{{moduleTitle}}</text>
+    <text class="viewmore">查看全部></text>
+  </view>
 </template>
 <!--小社群模板-->
 <template name="small_group">
   <view class="group_view">
     <image src='{{group_image}}' class="group_image" />
+    <view class='group_word'>
     <view class='group_children'>
       <text class='group_type' id='group_type'>{{groupType}}贴({{description01}}/{{description02}}）</text>
-      <button type='primary' size='mini'>加入</button>
+      <text class='group_total'>{{value01}}人加入|{{value02}}条动态</text>
     </view>
-    <text class='group_total'>{{value01}}人加入|{{value02}}条动态</text>
+    <button type='primary' size='mini'>加入</button>
+    </view>
   </view>
 </template>
 <!--频道模板-->
 <template name="channel">
   <view class='channel_view'>
-      <image src='{{channel_image}}' class='channel_image'/>
-      <view>
-        <text class="channel_title">{{channel_title}}</text>
-        <text class="channel_description">{{channel_description}}</text>
-        <text class="channel_total">已更新{{channel_total}}期</text>
+    <image src='{{channel_image}}' class='channel_image' />
+    <view class="channel_children">
+      <text class="channel_title">{{channel_title}}</text>
+      <text class="channel_description">{{channel_description}}</text>
+      <text class="channel_total">已更新{{channel_total}}期</text>
+    </view>
+  </view>
+</template>
+<!--最新模板-->
+<template name="latest">
+  <view class='latest_margin'>
+    <image src='{{latest_images}}' class='latest_image' />
+    <view class='latest_padding'>
+      <text class="latest_title">{{latest_title}}</text>
+      <view class='latest_border'>
+        <view class='latest_view'>
+          <image src='../images/index_icon/icon_yueduliang.png' class="latest_book" />
+          <text class='update_total'>{{update_total}}</text>
+        </view>
+        <text class='create_time'>{{create_time}}</text>
       </view>
+    </view>
   </view>
 </template>
 <!--小社群使用模板-->
@@ -60,3 +80,14 @@
 <!--频道使用模板-->
 <template is="module_title" data="{{...module02}}" />
 <template is="channel" data="{{...rental_information}}" />
+<view class="home-view-line03" />
+<template is="channel" data="{{...rental_story}}" />
+<view class="home-view-line03" />
+<template is="channel" data="{{...rental_contract}}" />
+<view class="home-view-line02" />
+
+<!--最新使用模板-->
+<template is="module_title" data="{{...module03}}" />
+<template is="latest" data="{{...beijing_plan}}" />
+<view class="home-view-line03" />
+<template is="latest" data="{{...housing}}" />
