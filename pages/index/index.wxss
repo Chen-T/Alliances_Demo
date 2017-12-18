@@ -1,4 +1,4 @@
-/* pages/first/first.wxss */
+/* pages/home/home.wxss */
 .swiper{
   height:100%,
   padding-right=100px;
@@ -35,7 +35,7 @@
 }
 .home-view-line03{
  width: 100%;
- height: 2px;
+ height: 1px;
  margin-top: 5px;
  background-color: gainsboro;
 }
@@ -46,60 +46,115 @@
  background-color: gainsboro;
 }
 /*模板标题样式*/
+.moudule_top{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+}
 .module_title{
   font-size: 40rpx;
 }
 .viewmore{
   font-size: 30rpx;
   color: #7B7B7B;
-  padding:200px;
-  padding-bottom: 10px;
 }
 
 /*小社群处的样式*/
   /*小社群*/
 .group_view{
   display: flex;
-  flex-direction:column;
+  flex-direction:row;
 }
 .group_image{
-  width: 71px;
+ width: 71px;
   height: 67px;
-  padding-top:20px;
-  padding-left: 20px;
-  padding-bottom: 1px;
+}
+.group_word{
+  display: flex;
+  padding-left: 10px;
 }
 .group_children{
-  display: flex;
- justify-content: space-between;
+ display: flex;
+ flex-direction: column;
+ padding-top: 5px;
 }
 .group_type{
-  font-size: 30rpx;
-  padding-top: 1px;
-  padding-left: 3px;
-}
-.group_button{
-  padding-right: 2px;
+ font-size: 30rpx;
 }
 .group_total{
-  font-size: 30rpx;
-  color:  #7B7B7B;
-  padding-left: 3px;
+font-size: 26rpx;
+color:  #7B7B7B;
+padding-top:10px;
+}
+button{
+ height: 30px; 
 }
    /*频道*/
+.channel_view{
+  display: flex;
+  flex-direction: row;
+}
+.channel_children{
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-left: 5px;
+}
 .channel_image{
   width: 103px;
   height: 75px;
   padding-top:20px;
   padding-left: 20px;
+  padding-right: 3px;
   padding-bottom: 1px;
 }
 .channel_title{
   font-size: 30rpx;
 }
 .channel_description{
-  font-size: 20rpx;
+  font-size: 26rpx;
+  color:  #7B7B7B;
+
 }
 .channel_total{
-  font-size: 20rpx;
+  font-size: 28rpx;
+  color:  #7B7B7B;
+  padding-top: 15px;
+}
+
+/*最新*/
+.latest_margin{
+  display: flex;
+  padding-top: 20px;
+}
+.latest_padding{
+  padding-left: 10px;
+}
+.latest_border{
+  display: flex;
+  padding-top: 35px;
+}
+.latest_view{
+  display: flex;
+}
+.latest_image{
+  width: 103px;
+  height: 75px;
+}
+.latest_book{
+  width: 17px;
+  height: 17px;
+}
+.latest_title{
+  font-size: 30rpx;
+}
+.update_total{
+  font-size: 28rpx;
+  color:  #7B7B7B;
+  padding-left: 3px;
+}
+.create_time{
+font-size: 28rpx;
+color:  #7B7B7B;
+padding-left: 120px;
 }
