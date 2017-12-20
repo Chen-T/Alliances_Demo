@@ -1,0 +1,16 @@
+<view class='container'>
+  <template name="header">
+    <view class='headder_container'>
+      <view class='header_left' bindtap='back_home'>
+        <image src='../../images/icon/index.png' class='header_image'/>
+        <text>首页</text>
+      </view>
+      <view class='header_right'>
+        <view class='focusOn' bindtap='focusOn'>关注</view>
+        <text>|</text>
+        <view class='jumpI' bindtap='jumpI'>我的</view>
+      </view>
+    </view>
+  </template>
+  <template is='header' />
+</view>
