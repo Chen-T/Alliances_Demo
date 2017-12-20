@@ -1,0 +1,21 @@
+/* pages/home/soliciting/soliciting.wxss */
+.headder_container{
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 40px;
+  padding-top:10px;
+
+}
+.header_image{
+  width: 25px;
+  height: 28px;
+}
+.header_left{
+  display: flex;
+}
+.header_right{
+  display: flex;
+}
