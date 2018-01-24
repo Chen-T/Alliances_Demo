@@ -1,33 +1,33 @@
 <!--pages/personal/personal.wxml-->
 <view>
-  <image src='https://github.com/Chen-T/hello-world/blob/master/images/mine/mine_background.JPG?raw=true' class="mine_image" />
+  <image src='{{mine_background}}' class="mine_image" />
 </view>
 <!--定义模板-->
 <template name="mine_item">
   <view class="mine_flex">
     <image src='{{item_images}}' class='item_image' />
     <view class="mine_descMark">
-      <text class='mine_description'>{{mine_description}}</text>
-      <image src="{{mine_go}}" class="mine_mark"/>
+      <text class='mine_description' space='nbsp'>{{mine_description}}</text>
+      <image src="{{mine_go}}" class="mine_mark" />
     </view>
   </view>
 </template>
 <template is="mine_item" data="{{...personal_information}}" />
-<view class="home-view-line01"/>
+<view class="-view-line01" />
 <template is="mine_item" data="{{...my_income}}" />
-<view class="home-view-line02"/>
+<view class="mine-view-line02" />
 <template is="mine_item" data="{{...promotion_center}}" />
-<view class="home-view-line01"/>
+<view class="mine-view-line01" />
 <template is="mine_item" data="{{...my_activities}}" />
-<view class="home-view-line02"/>
+<view class="mine-view-line02" />
 <template is="mine_item" data="{{...my_quesAnser}}" />
-<view class="home-view-line02"/>
+<view class="mine-view-line02" />
 <template is="mine_item" data="{{...my_bought}}" />
-<view class="home-view-line02"/>
+<view class="mine-view-line02" />
 <template is="mine_item" data="{{...giving_records}}" />
-<view class="home-view-line02"/>
+<view class="mine-view-line02" />
 <template is="mine_item" data="{{...coupons}}" />
-<view class="home-view-line02"/>
+<view class="mine-view-line02" />
 <template is="mine_item" data="{{...invitation_code}}" />
-<view class="home-view-line01"/>
+<view class="mine-view-line01" />
 <template is="mine_item" data="{{...feedback}}" />
